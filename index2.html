@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GNXAS — Ultra-Modern EXAFS Data Analysis Portal</title>
+
+  <!-- SEO & Academic Metadata -->
+  <meta name="description" content="Official landing page of the GNXAS Software Suite for ab initio EXAFS & XANES multiple-scattering calculations and structural refinement. Developed at University of Camerino and University of L'Aquila.">
+  <meta name="keywords" content="GNXAS, EXAFS Software, Multiple Scattering, XAS, PHAGEN, FITHEO, RMC-GNXAS, Red-Book Manual, Andrea Di Cicco, Adriano Filipponi, C.R. Natoli, UNICAM">
+  <meta name="author" content="Prof. Andrea Di Cicco - XAS Group University of Camerino">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+  <!-- Alternative Ultra-Modern Stylesheet -->
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       1. FLOATING GLASS NAV PILL HEADER
+       ========================================== -->
+  <header class="v2-header">
+    <div class="v2-nav-pill">
+      <a href="#intro" class="v2-brand">
+        <img src="assets/logo_PhysicsDivision_mr.png" alt="UNICAM Physics Division Logo">
+        <span class="v2-brand-name">GNXAS <span style="font-size:0.75rem; color:var(--v2-primary-cyan); font-weight:600;">v12.2025</span></span>
+      </a>
+
+      <ul class="v2-nav-links">
+        <li><a href="#intro">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#documentation">Documentation</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#authors">Authors</a></li>
+        <li><a href="#license">Terms</a></li>
+      </ul>
+
+      <a href="#downloads" class="v2-nav-cta">Download Setups</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         2. ULTRA-MODERN HERO SECTION (#intro)
+         ========================================== -->
+    <section class="v2-hero" id="intro">
+      <div class="v2-container">
+        <div class="v2-hero-grid">
+          <div class="v2-hero-text">
+            <span class="v2-badge">
+              <span style="width:8px; height:8px; border-radius:50%; background:var(--v2-primary-cyan);"></span>
+              University of Camerino & University of L'Aquila
+            </span>
+
+            <h1 class="v2-hero-title">
+              GNXAS <span class="v2-gradient-text">EXAFS & MS</span> Suite
+            </h1>
+
+            <p class="v2-hero-lead">
+              The <strong>GNXAS package</strong> is an advanced software for EXAFS data analysis based on multiple-scattering (MS) calculations and a rigorous fitting procedure of raw experimental data.
+            </p>
+
+            <!-- Collapsible Main Characteristics Card -->
+            <div class="v2-hero-card">
+              <div class="v2-char-toggle" onclick="toggleV2Char()">
+                <div style="display:flex; align-items:center; gap:0.5rem;">
+                  <span style="color:var(--v2-primary-cyan);">⚛️</span>
+                  <h4 style="font-size:0.95rem; color:#fff; text-transform:uppercase; letter-spacing:0.5px;">Main Characteristics of GNXAS</h4>
+                </div>
+                <span id="v2CharBtn" class="v2-char-toggle-btn">▼ Technical Details</span>
+              </div>
+
+              <div id="v2CharBody" class="v2-collapsible-body">
+                <div class="v2-char-list">
+                  <div class="v2-char-item">
+                    <span class="v2-char-icon">✓</span>
+                    <div>Atomic phase shifts calculations in muffin-tin approximation based on atom self-consistent relativistic calculations.</div>
+                  </div>
+                  <div class="v2-char-item">
+                    <span class="v2-char-icon">✓</span>
+                    <div>Inclusion of inelastic losses through complex Hedin-Lundqvist energy-dependent potentials.</div>
+                  </div>
+                  <div class="v2-char-item">
+                    <span class="v2-char-icon">✓</span>
+                    <div>Multiple-scattering signals associated with 2-body ($g_2$), 3-body ($g_3$), and 4-body ($g_4$) atom configurations.</div>
+                  </div>
+                  <div class="v2-char-item">
+                    <span class="v2-char-icon">✓</span>
+                    <div>Advanced fitting procedure: fit simultaneously any number of spectra/edges, direct raw data fitting, liquid state $g(r)$ extraction, MINUIT error analysis.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="v2-hero-actions">
+              <a href="#downloads" class="v2-btn v2-btn-primary">
+                📥 Direct Download Setups
+              </a>
+              <a href="#documentation" class="v2-btn v2-btn-glass">
+                📖 Red-Book Manual
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Right Visual Presentation Card -->
+          <div class="v2-hero-preview-box">
+            <div class="v2-hero-img-frame">
+              <img src="assets/Home gnxas.png" alt="GNXAS Software Interface">
+            </div>
+            <div class="v2-funding-pill">
+              <strong style="color:var(--v2-primary-cyan);">CNR & INFM Support:</strong> Supported by Italian CNR (contract 98.00475.ST76) & INFM (1999–2003).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3. DIRECT DOWNLOADS HUB (#downloads)
+         ========================================== -->
+    <section id="downloads" style="background: rgba(255,255,255,0.01);">
+      <div class="v2-container">
+        <div class="v2-section-header">
+          <span class="v2-badge">Binary Distribution</span>
+          <h2 class="v2-section-title">GNXAS Packages & OS Setups</h2>
+          <p class="v2-section-subtitle">
+            Direct single-click downloads for Linux, macOS, and Windows Subsystem for Linux (WSL2).
+          </p>
+        </div>
+
+        <div class="v2-downloads-grid">
+          <!-- OS Card 1: Linux 64-bit -->
+          <div class="v2-os-card">
+            <div class="v2-os-head">
+              <div class="v2-os-badge-icon">🐧</div>
+              <div>
+                <h3 style="font-size:1.2rem; color:#fff;">Linux 64-bit</h3>
+                <span style="font-size:0.8rem; color:var(--v2-text-muted);">Debian, Ubuntu, Kubuntu, Fedora</span>
+              </div>
+            </div>
+
+            <a href="downloads/Linux/gnxas_12_2025_Linux_64deb.tar.gz" class="v2-download-item" download>
+              <div>
+                <div class="v2-dl-title">Linux 64-bit (Debian/Ubuntu v12.2025)</div>
+                <div class="v2-dl-meta">Archive • 5.5 MB (.tar.gz)</div>
+              </div>
+              <div class="v2-dl-icon">⬇</div>
+            </a>
+
+            <a href="downloads/Linux/gnxas_12_2025_Linux_64kubu6.8.tar.gz" class="v2-download-item" download>
+              <div>
+                <div class="v2-dl-title">Linux 64-bit (Kubuntu v12.2025)</div>
+                <div class="v2-dl-meta">Archive • 5.8 MB (.tar.gz)</div>
+              </div>
+              <div class="v2-dl-icon">⬇</div>
+            </a>
+
+            <a href="downloads/Linux/gnxas_L_12_2006_k2_6_18_x86_64.tar.gz" class="v2-download-item" download>
+              <div>
+                <div class="v2-dl-title">Linux x86_64 Legacy (v12.2006)</div>
+                <div class="v2-dl-meta">Archive • 1.2 MB (.tar.gz)</div>
+              </div>
+              <div class="v2-dl-icon">⬇</div>
+            </a>
+          </div>
+
+          <!-- OS Card 2: macOS -->
+          <div class="v2-os-card">
+            <div class="v2-os-head">
+              <div class="v2-os-badge-icon">🍎</div>
+              <div>
+                <h3 style="font-size:1.2rem; color:#fff;">macOS</h3>
+                <span style="font-size:0.8rem; color:var(--v2-text-muted);">Apple Silicon (M1/M2/M3) & Intel</span>
+              </div>
+            </div>
+
+            <a href="downloads/Mac/gnxas_8_21_MACM2pro.tar.gz" class="v2-download-item" download>
+              <div>
+                <div class="v2-dl-title">macOS Apple Silicon M1/M2/M3 (v8.2021)</div>
+                <div class="v2-dl-meta">Archive • 4.4 MB (.tar.gz)</div>
+              </div>
+              <div class="v2-dl-icon">⬇</div>
+            </a>
+
+            <a href="downloads/Mac/gnxas_12_23_MAC64_intel.zip" class="v2-download-item" download>
+              <div>
+                <div class="v2-dl-title">macOS Intel 64-bit (v12.2023)</div>
+                <div class="v2-dl-meta">ZIP Package • 3.7 MB (.zip)</div>
+              </div>
+              <div class="v2-dl-icon">⬇</div>
+            </a>
+
+            <a href="downloads/Mac/gnxas_8_21_MAC64_intel.tar.gz" class="v2-download-item" download>
+              <div>
+                <div class="v2-dl-title">macOS Intel 64-bit (v8.2021)</div>
+                <div class="v2-dl-meta">Archive • 4.4 MB (.tar.gz)</div>
+              </div>
+              <div class="v2-dl-icon">⬇</div>
+            </a>
+          </div>
+
+          <!-- OS Card 3: Windows WSL2 -->
+          <div class="v2-os-card">
+            <div class="v2-os-head">
+              <div class="v2-os-badge-icon">🪟</div>
+              <div>
+                <h3 style="font-size:1.2rem; color:#fff;">Windows (WSL2)</h3>
+                <span style="font-size:0.8rem; color:var(--v2-text-muted);">Windows Subsystem for Linux</span>
+              </div>
+            </div>
+
+            <a href="downloads/Linux/gnxas_12_2025_Linux_64deb.tar.gz" class="v2-download-item" download>
+              <div>
+                <div class="v2-dl-title">Windows WSL Package (Linux 64-bit)</div>
+                <div class="v2-dl-meta">Archive • 5.5 MB (.tar.gz)</div>
+              </div>
+              <div class="v2-dl-icon">⬇</div>
+            </a>
+
+            <a href="#wsl-guide" class="v2-btn v2-btn-glass" style="margin-top:0.5rem; font-size:0.82rem; justify-content:center;">
+              💻 Open WSL2 Quick-Start Guide &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. DOCUMENTATION & TERMINAL GUIDES (#documentation)
+         ========================================== -->
+    <section id="documentation">
+      <div class="v2-container">
+        <div class="v2-section-header">
+          <span class="v2-badge">Official Manuals</span>
+          <h2 class="v2-section-title">Documentation & Setup Guides</h2>
+        </div>
+
+        <!-- Red-Book Handbook Banner -->
+        <div class="v2-redbook-banner">
+          <div class="v2-redbook-img">
+            <img src="assets/redgnxas.png" alt="GNXAS Red Book">
+          </div>
+          <div>
+            <span class="v2-badge" style="background:rgba(255,255,255,0.15); color:#fff;">Primary Reference</span>
+            <h3 style="font-size:2rem; color:#fff; margin-bottom:0.5rem;">The GNXAS "Red-Book" Handbook</h3>
+            <p style="color:rgba(255,255,255,0.9); font-size:0.95rem; line-height:1.6;">
+              <em>TASK QUARTERLY Vol. 4, No 4, 575-669 (2000)</em> — Authors: Adriano Filipponi & Andrea Di Cicco.<br>
+              Comprehensive 96-page manual covering $g_n$ distribution theory, code architecture, statistical error analysis, and $g(r)$ liquid refinements.
+            </p>
+            <a href="downloads/RedBook.pdf" download class="v2-btn" style="background:#fff; color:#991b1b; font-weight:700; margin-top:1rem;">
+              📥 Download Red-Book PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- Terminal Quick-Start Guide (#wsl-guide) -->
+        <div class="v2-terminal-card" id="wsl-guide">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:1.25rem;">
+            <h3 style="font-size:1.5rem; color:#fff;">WSL2 Interactive Quick-Start Guide</h3>
+            <a href="https://learn.microsoft.com/it-it/windows/wsl/install" target="_blank" rel="noopener" class="v2-btn v2-btn-glass" style="font-size:0.8rem; padding:0.4rem 0.8rem;">
+              📖 Microsoft Official WSL Guide &rarr;
+            </a>
+          </div>
+
+          <div class="v2-tabs">
+            <button class="v2-tab-btn active" onclick="switchV2Tab('v2-t1', this)">1. Dependencies</button>
+            <button class="v2-tab-btn" onclick="switchV2Tab('v2-t2', this)">2. 32-bit Multi-Arch</button>
+            <button class="v2-tab-btn" onclick="switchV2Tab('v2-t3', this)">3. Extract & PATH</button>
+          </div>
+
+          <div class="v2-tab-body active" id="v2-t1">
+            <div class="v2-code-box">
+              <button class="v2-copy-btn" onclick="copyV2Code('v2-c1', this)">Copy</button>
+              <code id="v2-c1">sudo apt-get update
+sudo apt-get install -y gnuplot emacs libquadmath0 x11-apps</code>
+            </div>
+          </div>
+
+          <div class="v2-tab-body" id="v2-t2" style="display:none;">
+            <div class="v2-code-box">
+              <button class="v2-copy-btn" onclick="copyV2Code('v2-c2', this)">Copy</button>
+              <code id="v2-c2">sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install -y libx11-6:i386 libxt6:i386 libxext6:i386</code>
+            </div>
+          </div>
+
+          <div class="v2-tab-body" id="v2-t3" style="display:none;">
+            <div class="v2-code-box">
+              <button class="v2-copy-btn" onclick="copyV2Code('v2-c3', this)">Copy</button>
+              <code id="v2-c3">tar -xvf gnxas_12_2025_Linux_64deb.tar.gz
+export PATH=$PATH:$(pwd)/gnxas/bin</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         5. ARCHITECTURE SECTION (#architecture)
+         ========================================== -->
+    <section id="architecture" style="background: rgba(255,255,255,0.01);">
+      <div class="v2-container">
+        <div class="v2-section-header">
+          <span class="v2-badge">Program Modules</span>
+          <h2 class="v2-section-title">Software Suite Architecture</h2>
+        </div>
+
+        <div class="v2-flowchart-card">
+          <div>
+            <img src="assets/flowchart_gnxas.jpg" alt="GNXAS Pipeline Flowchart" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
+          </div>
+          <div>
+            <span class="v2-badge">Computational Pipeline</span>
+            <h3 style="font-size:1.6rem; color:#fff; margin-bottom:0.75rem;">Integrated Modular Execution</h3>
+            <p>
+              Executes potential generation (<code>PHAGEN</code>), cluster construction (<code>CRYMOL</code> & <code>GNPEAK</code>), curved-wave MS signal calculations (<code>GNXAS</code>), and structural refinement (<code>FITHEO</code>).
+            </p>
+          </div>
+        </div>
+
+        <div class="v2-arch-grid">
+          <div class="v2-arch-card">
+            <h4 style="font-family:var(--v2-font-mono); color:var(--v2-primary-cyan);">PHAGEN</h4>
+            <p style="font-size:0.85rem; margin-top:0.3rem;">Relativistic muffin-tin atomic potential & Hedin-Lundqvist phase shifts generator.</p>
+          </div>
+          <div class="v2-arch-card">
+            <h4 style="font-family:var(--v2-font-mono); color:var(--v2-primary-cyan);">GNXAS</h4>
+            <p style="font-size:0.85rem; margin-top:0.3rem;">Curved-wave MS signal calculator for 2-body, 3-body, and 4-body configurations.</p>
+          </div>
+          <div class="v2-arch-card">
+            <h4 style="font-family:var(--v2-font-mono); color:var(--v2-primary-cyan);">FITHEO</h4>
+            <p style="font-size:0.85rem; margin-top:0.3rem;">Non-linear least squares structural refinement using CERN MINUIT optimization.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         6. AUTHORS & WHO WROTE GNXAS (#authors)
+         ========================================== -->
+    <section id="authors">
+      <div class="v2-container">
+        <div class="v2-authors-box">
+          <span class="v2-badge">Scientific Legacy</span>
+          <h3 style="font-size:1.8rem; color:#fff; margin-bottom:0.75rem;">Who Wrote GNXAS</h3>
+
+          <p style="font-size:0.95rem; line-height:1.65; color:var(--v2-text-body);">
+            Several scientists have contributed to the development of GNXAS since 1989. It contains the most up to date algorithms for EXAFS data analysis directly coded by the investigators.
+          </p>
+
+          <div class="v2-warning-banner">
+            <strong>⚠️ Warning on Code Complexity:</strong> GNXAS is not a trivial or "user proof" code. The complexity of some algorithms makes the required input cumbersome and input mistakes hard to identify.
+          </div>
+
+          <div class="v2-trio-grid">
+            <div class="v2-trio-card">
+              <h4 style="color:#fff;">C. R. Natoli</h4>
+              <div style="font-size:0.78rem; color:var(--v2-primary-cyan);">INFN - Frascati</div>
+              <p style="font-size:0.85rem; margin-top:0.5rem;">Pioneer of MS applications to EXAFS. Main author of <code>PHAGEN</code> potential engine.</p>
+            </div>
+            <div class="v2-trio-card">
+              <h4 style="color:#fff;">A. Filipponi</h4>
+              <div style="font-size:0.78rem; color:var(--v2-primary-cyan);">Università dell'Aquila</div>
+              <p style="font-size:0.85rem; margin-top:0.5rem;">Main author of <code>GNXAS</code> core engine, continued fraction matrix products, <code>DECONV</code>, <code>XASAM</code>.</p>
+            </div>
+            <div class="v2-trio-card">
+              <h4 style="color:#fff;">A. Di Cicco</h4>
+              <div style="font-size:0.78rem; color:var(--v2-primary-cyan);">Università di Camerino</div>
+              <p style="font-size:0.85rem; margin-top:0.5rem;">Main author of <code>FITHEO</code>, <code>RMC-GNXAS</code>, <code>EDXRD</code>, and leader of UNICAM XAS Group.</p>
+            </div>
+          </div>
+
+          <h4 style="color:#fff; margin-top:1.5rem; margin-bottom:1rem;">Key Contributors (Chronological Order)</h4>
+          <div class="v2-contrib-grid">
+            <div class="v2-contrib-chip"><strong>T. A. Tyson</strong> — Hedin-Lundqvist potential</div>
+            <div class="v2-contrib-chip"><strong>M. Benfatto</strong> — Disordered systems MS theory</div>
+            <div class="v2-contrib-chip"><strong>K. O. Hodgson</strong> — Biological systems</div>
+            <div class="v2-contrib-chip"><strong>C. Brouder</strong> — MS theoretical developments</div>
+            <div class="v2-contrib-chip"><strong>A. Trapananti</strong> — RMC-GNXAS developments</div>
+            <div class="v2-contrib-chip"><strong>M. Minicucci</strong> — Linux builds & maintenance</div>
+            <div class="v2-contrib-chip"><strong>E. Principi</strong> — GNXAS web interface (GNXAS2)</div>
+            <div class="v2-contrib-chip"><strong>K. Hatada</strong> — gfortran conversion & GUI</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         7. TERMS (#license)
+         ========================================== -->
+    <section id="license">
+      <div class="v2-container">
+        <div class="v2-authors-box" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.9)); text-align:center;">
+          <h3 style="font-size:1.8rem; color:#fff; margin-bottom:0.5rem;">Terms of Use & Non-Profit License</h3>
+          <p style="max-width:700px; margin:0 auto 1.5rem auto; font-size:0.95rem;">
+            GNXAS is distributed free of charge strictly for non-profit scientific research and academic education. Military research and defense applications are strictly prohibited.
+          </p>
+          <a href="#downloads" class="v2-btn v2-btn-primary">
+            ⬇ Direct Download OS Setups
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="v2-footer">
+    <div class="v2-container" style="text-align:center;">
+      <p>Copyright 1996–2026 XAS Group University of Camerino — Responsible: Prof. Andrea Di Cicco</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleV2Char() {
+      const body = document.getElementById('v2CharBody');
+      const btn = document.getElementById('v2CharBtn');
+      if (body.style.display === 'block') {
+        body.style.display = 'none';
+        btn.innerText = '▼ Technical Details';
+      } else {
+        body.style.display = 'block';
+        btn.innerText = '▲ Hide Details';
+      }
+    }
+
+    function switchV2Tab(tabId, btn) {
+      document.querySelectorAll('.v2-tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.v2-tab-body').forEach(c => c.style.display = 'none');
+      btn.classList.add('active');
+      document.getElementById(tabId).style.display = 'block';
+    }
+
+    function copyV2Code(id, btn) {
+      const txt = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(txt).then(() => {
+        btn.innerText = 'Copied!';
+        setTimeout(() => btn.innerText = 'Copy', 2000);
+      });
+    }
+  </script>
+</body>
+</html>

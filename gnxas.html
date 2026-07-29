@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The GNXAS Method & Software Packages | Università di Camerino</title>
+
+  <meta name="description" content="The GNXAS Method & EXAFS Data Analysis Software Suite developed at Unicam. Downloads for Linux & WSL, Red-Book manual, n-body correlations (g2, g3, g4).">
+  <meta name="keywords" content="GNXAS Method, EXAFS Software, GNXAS Download, RMC-GNXAS, FITEX, PEAKFIT, Red-Book Manual">
+  <meta name="author" content="GNXAS Research Group - Università di Camerino">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container navbar">
+      <a href="index.html" class="brand" aria-label="GNXAS Research Group Home">
+        <img src="assets/logo_PhysicsDivision_mr.png" alt="UNICAM Physics Division Logo" class="header-physics-logo">
+        <div class="brand-text">
+          <span class="brand-title">GNXAS</span>
+          <span class="brand-subtitle">XAS LAB • UNICAM</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="research.html" class="nav-link">RESEARCH</a>
+        <a href="teaching.html" class="nav-link">TEACHING</a>
+        <a href="gnxas.html" class="nav-link active">GNXAS</a>
+        <a href="publications.html" class="nav-link">Publications & Highlights</a>
+        <a href="press.html" class="nav-link">Press & Awards</a>
+        <a href="life.html" class="nav-link">Life of the group</a>
+        <a href="links.html" class="nav-link">Links</a>
+        <a href="#software" class="nav-cta-btn">Get GNXAS</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-gradient-overlay"></div>
+      <div class="container">
+        <div class="hero-container-clean">
+          <div class="hero-tag">
+            <span class="hero-tag-dot"></span>
+            Theoretical Approach & Computational Suite
+          </div>
+          <h1 class="hero-title">The <span>GNXAS</span> Method & Suite</h1>
+          <p class="hero-description">
+            Advanced <em>ab initio</em> multiple-scattering (MS) calculations and non-linear structural refinement directly fit against raw X-ray absorption spectra (EXAFS & XANES).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- METHOD BREAKDOWN SECTION -->
+    <section>
+      <!-- Yellow Atomic Structure Graphic placed in corner -->
+      <img src="assets/nedge_yel.gif" alt="Atomic Structure Accent" class="corner-yellow-graphic">
+
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Theoretical Foundation</span>
+          <h2 class="section-title">Core Principles of GNXAS</h2>
+          <p class="section-subtitle">Beyond single-scattering Fourier transforms: full multi-body expansion.</p>
+        </div>
+
+        <div class="grid-cards">
+          <div class="card-item">
+            <h3>N-Body Distribution Functions</h3>
+            <p>Direct determination of 2-atom ($g_2$), 3-atom ($g_3$), and 4-atom ($g_4$) structural correlation functions without ad-hoc assumptions.</p>
+            <span class="card-meta">γ = γ⁽²⁾ + γ⁽³⁾ + γ⁽⁴⁾</span>
+          </div>
+
+          <div class="card-item">
+            <h3>Hedin-Lundqvist Potentials</h3>
+            <p>Self-consistent muffin-tin atomic potential construction incorporating complex Hedin-Lundqvist exchange-correlation potentials.</p>
+            <span class="card-meta">V_HL(r) & Phase Shifts δ_l(E)</span>
+          </div>
+
+          <div class="card-item">
+            <h3>Disordered & Extreme Systems</h3>
+            <p>Tailored for short-range order refinement in liquids, amorphous solids, high-temperature phases, and Diamond Anvil Cell (DAC) studies.</p>
+            <span class="card-meta">Liquids • Glasses • High P-T</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOFTWARE DOWNLOADS SECTION -->
+    <section id="software" style="background-color: var(--bg-card);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Software Distribution</span>
+          <h2 class="section-title">Packages & Downloads</h2>
+          <p class="section-subtitle">Production-ready computational tools for data reduction and MS spectrum optimization.</p>
+        </div>
+
+        <div class="grid-cards">
+          <div class="card-item">
+            <h3>GNXAS Core Package</h3>
+            <p>Flagship least-squares refinement suite. Calculates 2-, 3-, and 4-body MS signals and refines structural parameters.</p>
+            <span class="card-meta">Linux 64-bit / Source</span>
+          </div>
+          <div class="card-item">
+            <h3>RMC-GNXAS</h3>
+            <p>Reverse Monte Carlo program integrated with GNXAS signals for modeling 3D atomic configurations in liquids.</p>
+            <span class="card-meta">Linux 64-bit</span>
+          </div>
+          <div class="card-item">
+            <h3>FITEX Data Reduction</h3>
+            <p>Pre-processing software for edge determination, background subtraction, post-edge normalization, and spline fitting.</p>
+            <span class="card-meta">Linux / Windows</span>
+          </div>
+          <div class="card-item">
+            <h3>PEAKFIT & EDXRD</h3>
+            <p>Energy-Dispersive X-ray Diffraction data refinement and peak fitting program for high-pressure phase transitions.</p>
+            <span class="card-meta">Linux / Windows</span>
+          </div>
+        </div>
+
+        <!-- WSL Information Box -->
+        <div style="margin-top: 3.5rem; background: var(--primary-dark); border-radius: var(--radius-lg); padding: 2rem; color: white; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap;">
+          <div>
+            <h3 style="color:white; font-size:1.3rem; margin-bottom:0.4rem;">Windows (WSL) Setup Helper</h3>
+            <p style="color:rgba(255,255,255,0.75); margin:0; font-size:0.92rem;">Execute GNXAS natively on Windows using WSL Ubuntu environment:</p>
+          </div>
+          <code style="background:#040915; padding:0.75rem 1.25rem; border-radius:var(--radius-md); color:var(--accent-cyan);">wsl --install -d Ubuntu</code>
+        </div>
+      </div>
+    </section>
+
+    <!-- RED BOOK MANUAL SECTION -->
+    <section>
+      <div class="container">
+        <div style="background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 100%); border-radius: var(--radius-xl); padding: 3rem; color: white; display: grid; grid-template-columns: 1fr 1.8fr; gap: 2.5rem; align-items: center;">
+          <div style="background: rgba(0,0,0,0.25); border: 2px solid rgba(255,255,255,0.2); border-radius: var(--radius-lg); padding: 2rem; text-align: center;">
+            <div style="font-family: var(--font-serif); font-size: 2rem;">GNXAS</div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Official Handbook</div>
+            <p style="margin-top: 0.75rem; font-size: 0.8rem; color: rgba(255,255,255,0.7);">Edited by A. Di Cicco et al.</p>
+          </div>
+
+          <div>
+            <h3 style="color:white; font-size:1.85rem; margin-bottom:1rem;">The GNXAS "Red-Book" User Manual</h3>
+            <p style="color:rgba(255,255,255,0.9); line-height:1.6; margin-bottom:1.5rem;">
+              The official manual ("Red-Book") provides step-by-step instructions on executing phase-shift calculations (PHAGEN), structural expansion (CRYSFCOMP), molecular sampling (MOLECULE), and least-squares spectrum fitting (GNXAS).
+            </p>
+            <a href="index.html#contacts" class="btn btn-outline-light">Request Manual & Example Datasets &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>GNXAS Research Group</h3>
+          <p>Physics of Matter • Università di Camerino, Italy.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">HOME</a>
+            <a href="research.html">RESEARCH</a>
+            <a href="teaching.html">TEACHING</a>
+            <a href="gnxas.html">GNXAS</a>
+            <a href="publications.html">Publications & Highlights</a>
+            <a href="press.html">Press & Awards</a>
+            <a href="life.html">Life of the group</a>
+            <a href="links.html">Links</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Institutions</h4>
+          <div class="footer-links">
+            <a href="https://www.unicam.it" target="_blank" rel="noopener">Università di Camerino</a>
+            <a href="https://fisica.unicam.it/" target="_blank" rel="noopener">Sezione di Fisica UNICAM</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>GNXAS Packages</h4>
+          <div class="footer-links">
+            <a href="#software">GNXAS Core Suite</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 1996–2026 XAS Group University of Camerino. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
